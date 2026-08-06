@@ -1,0 +1,488 @@
+/* ---------- RESET ---------- */
+
+*{      /*O asterisco significa aplicar a TODOS os elementos do site*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- CORPO ---------- */
+
+html, body{
+    overflow-x: hidden;
+
+    font-family:'Poppins', sans-serif;
+
+    background: #fff2ec;    /*Cor do fundo do canto superior direito do cabeçalho (quando o navegador está minimizado no pc)*/
+
+    color:#333; /*Cor de Texto (Cinzento Escuro)*/
+
+}
+
+/* ---------- CABEÇALHO ---------- */
+header{
+
+    display:grid;
+
+    grid-template-columns:300px 1fr 280px 200px;  /*Cria 3 colunas na mesma linha (Onde tem o menu, logo e o botão)*/
+
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:#FFF7F4;    /*Cor de fundo do cabeçalho*/
+
+    border-bottom:1px solid #ead2db; /*Cor da linha que separa o cabeçalho e o corpo do site*/
+
+}
+
+
+.logo img{
+
+    width: 260px;
+
+}
+
+
+
+nav{        
+
+    display:flex;
+
+    justify-content:center;    /*Faz o menu ficar centralizado*/
+
+}
+
+
+nav ul{
+
+    display:flex;
+
+    gap:45px;
+
+    list-style:none;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#5d443d;
+
+    font-weight:500;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#d98ea2;
+
+}
+
+
+
+.btn-whatsapp:hover{
+
+    background:#c35784;
+
+}
+
+
+.btn-whatsapp{
+
+    justify-self:end;
+
+    background:#d98ea2;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 30px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*================ INICIO MENU =================*/
+
+.Inicio{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    padding:80px 200px; /*Ajustar altura da seção ; Ajustar esta seção horizontalmente*/
+    gap: 10px; /*Ajustar a imagem horizontalmente*/
+
+    background:#fcf3ef; /*Cor de fundo desta seção*/
+
+}
+
+
+
+.Inicio-texto{
+
+    max-width:550px;
+
+}
+
+
+.Inicio h1{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:72px;
+
+    font-weight:300;
+
+    line-height:0.95;
+
+    color:#5b4038;
+    letter-spacing: 0.5px;
+
+
+}
+
+
+.Inicio span{
+
+    display:block;
+    font-family:'Allura', cursive;
+    font-size:86px;
+    color:#d88fa3;
+    font-weight:400;
+    margin-top:-10px;
+}
+
+
+.subtitulo{
+    margin-top:35px;
+    font-size:18px;
+    font-weight:400;
+    color:#5f453e;
+}
+
+
+.categorias{
+    margin-top:35px;
+    font-size:16px;
+    line-height:2;
+    color:#6d5b55;
+}
+
+
+.Inicio-botoes{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:45px;
+
+}
+
+.btn-principal{
+    background:#d98ea2;
+    color:white;
+    padding:16px 34px;
+    border-radius:35px;
+    font-size: 16px;
+}
+
+
+
+.btn-secundario{
+    border:2px solid #d98ea2;
+    color:#5d443d;
+    padding:16px 34px;
+    border-radius:35px;
+    font-size:16px;
+
+}
+
+
+
+.Inicio-imagem{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.Inicio-imagem img{
+
+    width:100%;     /*a imagem ocupa menos espaço dentro da coluna.*/
+
+    max-width:240px;    /*impede que fique gigante em ecrãs muito grandes*/
+
+    border-radius:25px;
+
+}
+
+
+
+/*=========================================
+            VANTAGENS
+=========================================*/
+
+.vantagens{
+
+    padding:90px 60px;
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.vantagens h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:50px;
+
+    color:#5f453e;
+
+    margin-bottom:60px;
+
+}
+
+.vantagens-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:40px;
+    align-items:start;
+
+}
+
+.vantagem{
+
+    text-align:center;
+
+    padding:10px;
+
+}
+
+.vantagem:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.icone{
+
+    font-size:38px;
+
+    margin-bottom:18px;
+
+}
+
+.vantagem h3{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#5f453e;
+
+    margin-bottom:15px;
+
+}
+
+.vantagem p{
+
+    font-size:20px;
+
+    line-height:1.6;
+
+    color:#6f615d;
+
+}
+
+
+.vantagem svg{
+
+    width:40px;
+    height:40px;
+    stroke: #d98ea2;
+    stroke-width:1.8;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:900px){
+    body{
+        background:red !important;
+    }
+    header{
+
+        grid-template-columns:1fr auto;
+
+    }
+    .menu-mobile{
+    display:flex;
+    justify-self:end;
+    align-self:center;
+    }
+    nav{
+
+        position:absolute;
+
+        top:95px;
+
+        left:0;
+
+        width:100%;
+
+        opacity:0;
+
+        visibility:hidden;
+
+        pointer-events:none;
+
+    }
+    
+
+    .btn-whatsapp{
+        display:none;
+    }
+
+    
+
+    .menu-mobile.aberto span:nth-child(1){
+
+    transform:rotate(45deg) translateY(8px);
+
+    }
+
+    .menu-mobile.aberto span:nth-child(2){
+
+        opacity:0;
+
+    }
+
+    .menu-mobile.aberto span:nth-child(3){
+
+        transform:rotate(-45deg) translateY(-8px);
+
+    }
+
+    nav.ativo{
+
+     display:block;
+
+    position:absolute;
+
+    top:90px;
+
+    left:0;
+
+    width:100%;
+
+    background:#FFF7F4;
+
+    padding:25px 0;
+
+    }
+
+  
+
+    nav ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:30px;
+
+    }
+}
+
+
+/*=============================
+        MENU MOBILE
+=============================*/
+
+.menu-mobile{
+
+    display:none;
+
+    width:45px;
+
+    height:45px;
+
+    border:3px solid #e8d9d5;
+
+    border-radius:15px;
+
+    background:white;
+
+    cursor:pointer;
+
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:6px;
+
+    transition:0.3s;
+
+}
+
+.menu-mobile:hover{
+
+    background:#faf5f4;
+
+}
+
+.menu-mobile span{
+
+    width:18px;
+
+    height:2px;
+
+    background:#5d443d;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+}
+
+
+body{
+    background:red !important;
+}
