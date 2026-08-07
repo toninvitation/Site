@@ -9,10 +9,7 @@
 /* ---------- CORPO ---------- */
 
 html, body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /*Esconde a barra de scroll horizontal*/
     font-family:'Poppins', sans-serif;
     background: #fff2ec;    /*Cor do fundo do canto superior direito do cabeçalho (quando o navegador está minimizado no pc)*/
     color:#333; /*Cor de Texto (Cinzento Escuro)*/
@@ -369,33 +366,3 @@ nav a:hover{    /*Cor ao passar o rato nas palavras do menu*/
 
 
 
-
-
-
-/* 2. Torna os contentores principais fluidos */
-.seu-contentor-principal, main, section {
-    width: 100%;
-    max-width: 1200px; /* Largura máxima para computadores */
-    box-sizing: border-box;
-}
-
-/* 3. Garante que as imagens não fiquem gigantes no telemóvel */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Quando o ecrã for menor que 768px (Telemóveis e Tablets pequenos) */
-@media (max-width: 768px) {
-    /* Exemplo: Se tiver colunas lado a lado no PC, passam a ficar uma por baixo da outra */
-    .sua-grelha-ou-colunas {
-        display: flex;
-        flex-direction: column; 
-    }
-    
-    /* Reduzir ligeiramente o tamanho dos textos grandes */
-    h1 {
-        font-size: 24px;
-    }
-}
