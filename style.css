@@ -19,9 +19,9 @@ html, body{
 header{
     display:grid;
     /*menu para esquerda x 1fr x menu para direita x botão de encomendar para direita*/
-    grid-template-columns:300px 1fr 280px 20px;  /*Cria 4 colunas na mesma linha (Onde tem o menu, logo e o botão de encomendar e outro botão de encomedar, que só é visível quando o ecrã<900px)*/
+    grid-template-columns:300px 1fr 280px 120px;  /*Cria 4 colunas na mesma linha (Onde tem o menu, logo e o botão de encomendar e outro botão de encomedar, que só é visível quando o ecrã<900px)*/
     align-items:center;
-    padding:8px 20px; /*Altura do cabeçalho x Onde começa o cabeçalho(mais à direita/esquerda)*/
+    padding:20px 140px; /*Altura do cabeçalho x Onde começa o cabeçalho(mais à direita/esquerda)*/
     background:#f9ebe1;    /*Cor de fundo do cabeçalho*/
     border-bottom:2px solid #ead2db; /*Cor da linha que separa o cabeçalho e o corpo do site*/
 }
