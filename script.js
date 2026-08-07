@@ -1,4 +1,4 @@
-const menu = document.querySelector("nav");
+const menu = document.getElementById("menu");
 const botao = document.getElementById("menu-mobile");
 
 botao.addEventListener("click", () => {
@@ -8,3 +8,13 @@ botao.addEventListener("click", () => {
 
 });
 
+document.querySelectorAll("#menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        menu.classList.remove("ativo");
+        botao.classList.remove("aberto");
+
+    });
+
+});
